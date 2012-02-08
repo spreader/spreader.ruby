@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.clear {
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#flash_notice, #flash_alert {
+    padding: 5px 8px;
+    margin: 10px auto;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#flash_notice {
+    background-color: #CFC;
+    border: 1px solid #6C6;
+}
+
+#flash_alert {
+    background-color: #FCC;
+    border: 1px solid #C6C;
+}
+
+html, body {
+    padding: 0;
+    margin: 0 auto;
+    font-family: Helvetica;
+    min-width: 980px;
+    overflow: auto;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body > header, body > footer {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 980px;
+    color: #fff;
+    background-color: #000;
+}
+
+#content {
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 10px;
+    border-bottom: 2px solid #EF731B;
+    position: absolute;
+    height: 90px;
+}
+
+.header-logo {
+    width: 260px;
+    height: 77px;
+    background: url('logo.png') 0 0 no-repeat;
+    display: block;
+    float: left;
+}
+
+.header-row {
+    margin: 0 auto;
+    /*padding-left: 25px;*/
+    margin-left: 25px;
+    width: 95%;
+}
+
+html div#main {
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 102px;
+    margin-bottom: 125px;
+}
+
+/*@media screen{
+body>div#header{
+ position:fixed;
+}
+}
+html body{
+overflow:auto;}*/
+footer {
+    bottom: 0;
+    left: 0;
+    height: 125px;
+    width: 100%;
+    position: fixed;
+}
+
+footer div.wrapper {
+    padding: 15px;
+    padding-bottom: 5px;
+    position: relative;
+    width: 980px;
+    bottom: 0;
+    margin: 0 auto;
+    clear: both;
+}
+
+footer div.wrapper > div {
+    padding: 0;
+    margin: 0 auto;
+    float: left;
+    width: 220px;
+}
+
+footer dl {
+    margin: 0;
+    padding: 0 30px;
+    color: #0487d1;
+    text-align: center;
+}
+
+footer dl dt {
+    padding: 5px;
+}
+
+footer dl dd a {
+    font-size: 0.9em;
+    font-weight: normal;
+    text-decoration: none;
+    color: #999;
+}
+
+footer dl dd a:hover {
+    color: #fff;
+}
+
+footer dl dd {
+    text-align: center;
+    margin: 0;
+}
+
+.share-icon {
+    height: 24px;
+    width: 24px;
+    float: left;
+    opacity: 0.5;
+    margin-right: 7px;
+}
+
+.share-facebook {
+    background: url('facebook.png') 0 0 no-repeat;
+}
+
+.share-facebook:hover, .share-twitter:hover, .share-linkedin:hover, .share-youtube:hover, .share-blogger:hover {
+    opacity: 1.0;
+}
+
+.share-twitter {
+    background: url('twitter.png') 0 0 no-repeat;
+}
+
+.share-linkedin {
+    background: url('linkedin.png') 0 0 no-repeat;
+}
+
+.share-youtube {
+    background: url('youtube.png') 0 0 no-repeat;
+}
+
+.share-blogger {
+    background: url('blogger.png') 0 0 no-repeat;
+}
+
+.read-more {
+    display: inline-block;
+    width: 11px;
+    height: 14px;
+    margin: 0;
+    background: url('arrow.png') top left no-repeat;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    background: url('arrow.png') bottom left no-repeat;
+}
+
+div.group-box {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    display: block;
+    width: 250px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+div.group-box a {
+    opacity: 0.5;
+}
+
+div.group-box a:hover {
+    opacity: 1;
+}
+
+.group-box h3 {
+    font: 1.2em normal;
+    margin: 0 1.0em 0.5em 1.0em;
+    border-bottom: 1px dashed #ccc;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 5px 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: .5em 2em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.orange {
+    color: #fff !important;
+    border: solid 1px #BB4E04;
+    background: #BB4E04;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F07722), to(#BB4E04));
+    background: -moz-linear-gradient(top, #F07722, #BB4E04);
+}
+
+.orange:hover {
+    background: #A34303;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F29148), to(#A34303));
+    background: -moz-linear-gradient(top, #F29148, #A34303);
+}
+
+.orange:active {
+    color: #fff;
+    background: #A34303;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F29148), to(#A34303));
+    background: -moz-linear-gradient(top, #F29148, #A34303);
+}
+
+.float-right {
+    display: block;
+    flaot: right;
+    width: 300px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 0;
+  border-spacing: 0;
+  border-image: initial;
+}
+
+table th {
+    background: #EFEFEF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#DFE1E2));
+    background: -moz-linear-gradient(-90deg, #EFEFEF, #DFE1E2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#dfe1e2);
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#efefef, endColorstr=#dfe1e2);
+    box-shadow: 0 1px 2px #aaaaaa;
+    -moz-box-shadow: 0 1px 2px #aaaaaa;
+    -webkit-box-shadow: 0 1px 2px #aaaaaa;
+    text-shadow: white 0 1px 0;
+    border-bottom: 1px solid #EDEDED;
+    padding: 5px 10px 3px 10px;
+    font-size: 1.0em;
+    font-weight: bold;
+    line-height: 140%;
+    margin-bottom: 0.5em;
+    color: #5E6469;
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+table td {
+  padding: 10px 12px 8px 12px;
+  border-bottom: 1px solid #E8E8E8;
+  vertical-align: top;
+}
+
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+
+form ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form ol li {
+  margin: 0 0 10px 0;
+}
+
+form ol li label {
+  font-weight: bold;
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+div.contentwrap label {
+  width: 200px;
+  text-align: right;
+  padding: 0 10px 0 0;
+  display: inline-block;
+  zoom: 1;
+}
+
+div.growlUI { background: url(tick.png) no-repeat 10px 10px }
+div.growlUI h1, div.growlUI h2 {
+	color: white; padding: 5px 5px 5px 75px; text-align: left
+}

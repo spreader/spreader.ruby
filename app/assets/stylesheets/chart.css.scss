@@ -1,0 +1,37 @@
+.chart {
+    width: 1024px;
+    position: relative;
+}
+.chart-header {
+    background-color: #555;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    height: 32px;
+}
+.chart-body {
+    border-right: 1px solid #222;
+    border-left: 1px solid #222;
+    background-color: #fff;
+}
+.chart-footer {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #000;
+    background-color: #ccc;
+    height: 25px;
+}
+.chart-footer a {
+    text-decoration: none;
+    padding: 0 5px;
+    line-height: 1.5em;
+}
+.chart-footer a:hover {
+    text-decoration: underline;
+}
+.chart-footer .upload-button {
+    padding: 3px;
+    cursor: pointer;
+}
+.upload-button:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,15 @@
+<% title "Analytics >> Twitter" %>
+
+<select>
+   <option value="id">id</option>
+   <option value="retweet_count">retweet count</option>
+   <option value="created_at" selected>created at</option>
+   <option value="favorited">favorited</option>
+   <option value="text">text</option>
+   <option value="annotations">annotations</option>
+   <option value="contributors">contributors</option>
+   <option value="in_reply_to_screen_name">in_reply_to_screen_name</option>
+   <option value="source">source</option>
+</select>
+
+<%= high_chart("my_id", @high_chart) %>

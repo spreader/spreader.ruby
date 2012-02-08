@@ -1,0 +1,13 @@
+<div class="chart">
+  <div class="chart-header ui-widget-header">
+    <div class="ui-widget-float-right">
+      <input id="graph_date_selector" type="text" />
+    </div>
+  </div>
+  <div class="chart-body">
+    <%= high_chart("@graph_page_consumptions", @graph_page_consumptions)  %>
+  </div>
+  <div class="chart-footer">
+    <%= link_to "Report", "#" %>
+  </div>
+</div>

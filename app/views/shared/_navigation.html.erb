@@ -1,0 +1,12 @@
+<% if user_signed_in? %> <!-- drop down after login -->
+    <li><%= link_to image_tag("gear.png", :class => 'settings-gear') + " #{current_user.email}", edit_user_registration_path, :class => 'settings-user' %>
+      <ul>
+        <li><%= link_to 'Networks', edit_user_registration_path  %></li>
+        <li><%= link_to('Sign out', destroy_user_session_path, :method=>'delete') %></li>
+      </ul>
+    </li>
+<% else %>
+    <li>
+      <%= link_to('Sign in', new_user_session_path) %>
+    </li>
+<% end %>

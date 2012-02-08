@@ -1,0 +1,15 @@
+development:
+  uri: mongodb://heroku_app2290094:neemno5mg59a4bvjs21c2512lt@ds029287.mongolab.com:29287/heroku_app2290094
+  #host: localhost
+  #database: spreader_beta_development
+
+test:
+  host: localhost
+  database: spreader_beta_test
+
+production:
+  uri: <%= ENV['MONGOLAB_URI'] %>
+  #uri: mongodb://heroku_app1953632:tqj7m72nkk24p49t3ue1l3bi0p@ds029197.mongolab.com:29197/heroku_app1953632
+
+# heroku config | grep MONGOLAB_URI
+# MONGOLAB_URI => mongodb://heroku_app1953632:tqj7m72nkk24p49t3ue1l3bi0p@ds029197.mongolab.com:29197/heroku_app1953632

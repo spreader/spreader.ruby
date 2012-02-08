@@ -1,0 +1,223 @@
+#main-content {
+    width: 980px;
+    margin: 0 auto;
+}
+.main
+{
+    margin: 0 auto;
+}
+section.about
+{
+    margin: 0 auto;
+    width: 980px;
+}
+.summary-section
+{
+    width: 300px;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    margin-bottom: 10px;
+    float: left;
+    color: #fff;
+    background-image: linear-gradient(bottom, rgb(50,50,50) 15%, rgb(0,0,0) 85%);
+    background-image: -o-linear-gradient(bottom, rgb(50,50,50) 15%, rgb(0,0,0) 85%);
+    background-image: -moz-linear-gradient(bottom, rgb(50,50,50) 15%, rgb(0,0,0) 85%);
+    background-image: -webkit-linear-gradient(bottom, rgb(50,50,50) 15%, rgb(0,0,0) 85%);
+    background-image: -ms-linear-gradient(bottom, rgb(50,50,50) 15%, rgb(0,0,0) 85%);
+    background-image: -webkit-gradient(	linear,	left bottom,left top,color-stop(0.15, rgb(74,74,74)),color-stop(0.85, rgb(0,0,0)));
+}
+#on_right
+{
+ margin-left:10px;
+}
+.summary-section h2
+{
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-size: 2.0em;
+    text-align: center;
+}
+.summary-section h2 span
+{
+    color: #a6a7a7;
+}
+.summary-section p
+{
+    font-size: 1.1em;
+}
+.about_left
+{
+    width:650px;
+    float:left;
+    overflow:hidden;
+    margin-bottom:15px;
+}
+.summary-product
+{
+    clear: both;
+    border: 1px solid #aaa;
+    padding: 8px;
+    background-color: #eee;
+    height: 250px;
+    width: 97%;
+}
+.summary-product h2
+{
+    font-size: 2em;
+    display: inline;
+}
+.summary-product p
+{
+    margin-top: 20px;
+}
+.summary-product img
+{
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+.about_right
+{
+    width:320px;
+    float:right;
+    margin:0;
+    overflow:hidden;
+    font-size: 12px;
+}
+aside.accordion
+{
+    width: 100%;
+    margin: 0 auto;
+    float: right;
+    display: inline;
+}
+aside.accordion div
+{
+    text-align: left;
+}
+aside.accordion div .sign_up_input
+{
+     width:100%;
+     line-height: 25px;
+     height: 30px;
+     font-size: 1.4em;
+     margin-bottom:5px;
+}
+aside.accordion h3 a {
+    font-size: 1.8em !important;
+}
+aside.accordion div a{
+    color: #2e7db2;
+}
+aside.accordion div a.blue{
+    color: #f2f2f2;
+}
+
+aside.accordion dt
+{
+    text-align: left;
+    text-decoration: underline;
+}
+aside.accordion dd
+{
+    text-align: right;
+}
+
+/*slider*/
+#slider-container {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-color: #eee;
+}
+
+#slider {
+    margin: 0 auto;
+}
+
+#slider ul, #slider li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#slider li {
+    /*
+         define width and height of list item (slide)
+         entire slider area will adjust according to the parameters provided here
+     */
+    width: 980px;
+    height: 417px;
+    overflow: hidden;
+    font-size: 4.5em;
+    text-align: center;
+}
+
+#slider li span {
+    top: 30%;
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+#prevBtn, #nextBtn,
+#slider1next, #slider1prev {
+    display: block;
+    width: 30px;
+    height: 77px;
+    position: absolute;
+    top: 280px;
+    z-index: 1000;
+    margin: 0 auto;
+}
+
+#prevBtn a, #slider1prev a {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 77px;
+    background: url(prev_arrow.gif) no-repeat 0 0;
+    text-indent: -9999px;
+    opacity: 0.3;
+    left: -30px;
+}
+
+#slider li :hover #prevBtn a, #prevBtn a:hover, #nextBtn a:hover,
+#slider1next a:hover, #slider1prev a:hover {
+    opacity: 1.0;
+}
+
+#nextBtn a, #slider1next a {
+    background: url(next_arrow.gif) no-repeat 0 0;
+    left: 980px;
+    text-indent: -9999px;
+    opacity: 0.3;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 77px;
+    right: 0px;
+}
+
+#nextBtn a:hover, #slider1next a:hover {
+    opacity: 1;
+}
+
+#survey
+{
+    list-style: none;
+}
+li .handle {
+  font-size: 12px;
+  cursor: move;
+  color: #777;
+}
+
+#user_email, #user_name, #user_password, #user_password_confirmation {
+    width: 255px;
+    height: 25px;
+    font-size: 1.1em;
+    line-height: 25px;
+}

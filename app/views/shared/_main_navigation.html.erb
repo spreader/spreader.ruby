@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+    <li><%= link_to "Dashboard", "/dashboard" %></li>
+<% else %>
+    <li><%= link_to "Home", "" %></li>
+    <li><%= link_to "Features", "/features" %></li>
+    <li><%= link_to "Tutorials", "/tutorials" %></li>
+    <li><%= link_to "Feedback", "http://getsatisfaction.com/spreader" %></li>
+<% end %>

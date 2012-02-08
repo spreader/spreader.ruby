@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Spreader</title>
+        <%= stylesheet_link_tag "application", "jquery-ui-1.8.16.custom.css", "ui.daterangepicker.css", "menu-main", "menu-top", "user", "dashboard", "chart", "home" %>
+        <%= javascript_include_tag "application", "jquery-ui.min.js", "highcharts", "easySlider1.5.js", "exporting.js", "daterangepicker.jquery.js", "date.js" %>
+        <%= csrf_meta_tags %>
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="menu-top">
+                <ul>
+                    <%= render 'shared/navigation' %>
+                </ul>
+            </nav>
+            <div class="header-row">
+                <a href="/"><div class="header-logo"></div></a>
+                <nav class="main-menu">
+                    <ul>
+                      <%= render 'shared/main_navigation' %>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="content">
+          <%= yield %>
+        </section>
+
+        <footer>
+            <div class="wrapper">
+                <div><span>&copy; Spreader 2011</span></div>
+                <div>
+                    <dl>
+                        <dt>Company</dt>
+                        <dd><a href="/about">About</a></dd>
+                        <dd><a href="/pricing">Pricing</a></dd>
+                        <dd><a href="/terms">Terms</a></dd>
+                        <dd><a href="/privacy">Privacy</a></dd>
+                    </dl>
+                </div>
+                <div>
+                    <dl>
+                        <dt>Help</dt>
+                        <dd><a href="/tutorials">Tutorials</a></dd>
+                        <dd><a href="/faq">FAQ</a></dd>
+                        <dd><a href="/sitemap">Sitemap</a></dd>
+                    </dl>
+                </div>
+                <div>
+                    <dl>
+                        <dt>Follow Us</dt>
+                        <dd>
+                            <a href="http://www.facebook.com/spreader"><div class="share-icon share-facebook"></div></a>
+                            <a href="http://www.twitter.com/spreader"><div class="share-icon share-twitter"></div></a>
+                            <a href="http://www.linkedin.com/spreader"><div class="share-icon share-linkedin"></div></a>
+                            <a href="http://www.youtube.com/spreader"><div class="share-icon share-youtube"></div></a>
+                            <a href="http://spreaderhk.blogspot.com"><div class="share-icon share-blogger"></div></a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

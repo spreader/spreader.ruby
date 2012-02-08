@@ -1,0 +1,117 @@
+<section>
+  <div id="slider-container">
+    <div id="slider">
+      <ul>
+        <li><span>DATA-DRIVEN SOCIAL MEDIA MARKETING</span></li>
+        <li><span>CLIENT SIDE BUSINESS DATA LAYERING</span></li>
+        <li><span>CROSS-NETWORK MONITORING AND ANALYSIS</span></li>
+        <li><span>AUDIENCE BASED CONTENT OPTIMIZATION</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="main">
+    <section class="about">
+      <aside class="accordion">
+        <div id="accordion">
+          <h3><a href="#">Request (Alpha)</a></h3>
+
+          <div>
+            <input type="text" value="Name" />
+            <input type="text" value="Email.." />
+            <input type="password" value="password" /><br />
+
+            <p>
+
+            <div>I agree to the <%= link_to "Terms", "/terms" %></div>
+            <div>Subscribe to Spreader newsletter <input type="checkbox" checked/></div>
+            </p>
+            <a href="#" class="button blue">Sign Up</a>
+          </div>
+
+          <h3><a href="#">Give Feedback</a></h3>
+
+          <div>
+            <span>Please give us feedback on what’s most important to you. This helps us to guide our development road map. Thanks in advance!</span>
+            <dl>
+              <dt>HIGHEST PRIORITY TO ME:</dt>
+              <dd>Ad management tools</dd>
+              <dd>China Networks Integration</dd>
+              <dd>Content Publishing / Scheduling</dd>
+              <dd>Competitive Data Analysis</dd>
+            </dl>
+            <%= link_to "Submit Feedback", "http://getsatisfaction.com/spreader", :class => "button blue" %>
+          </div>
+
+          <h3><a href="#">Our Team</a></h3>
+
+          <div>
+            <dl>
+              <dt>Core:</dt>
+              <dd>Jonathan Liu</dd>
+              <dd>Graham Milosevic</dd>
+              <dt>Advisors:</dt>
+              <dd>Helen Choi</dd>
+              <dd>Donna Li</dd>
+              <dd>Simon Henry</dd>
+              <dd>Dan Rosen</dd>
+            </dl>
+            <%= link_to "See Full Bios", "#", :class => "button blue" %>
+          </div>
+        </div>
+      </aside>
+      <div class="row">
+        <div class="summary-section">
+          <h2 class="">For <span>Agencies</span></h2>
+
+          <p>Still spending valuable time creating manual reports for your clients week after week? Take your service to
+            the next level with Spreader!</p>
+        </div>
+        <div class="summary-section">
+          <h2>For <span>Marketers</span></h2>
+
+          <p>Keep close watch on performance of your networks while also tracking the progress of competitors. Extend
+            your marketing reach with Spreader!</p>
+        </div>
+      </div>
+      <div class="summary-product">
+        <h2>About Our Products</h2>
+        <%= image_tag "circles.png", :class => "image-right" %>
+        <p>Spreader helps brand create, seed, track and optimize social media content across various channels and
+          geographies.</p>
+
+        <p>We are currently in limited free Alpha release but will be quickly moving into new features to enable
+          marketers with social media executions.</p>
+
+        <p>Spreader is built by a team of marketing and technology professionals.</p>
+      </div>
+
+    </section>
+
+  </section>
+</section>
+<script type="text/javascript">
+    $(function() {
+        $("#slider").easySlider({
+            controlsBefore:	'<div id="controls">',
+            controlsAfter:	'</div>',
+            continuous: true
+        });
+
+        var icons = {
+            header: "ui-icon-plus",
+            headerSelected: "ui-icon-minus"
+        };
+        $("#accordion").accordion({
+            icons: icons,
+            collapsible: true,
+            autoHeight: false,
+            navigation: true
+        });
+        $("#toggle").button().toggle(function() {
+            $("#accordion").accordion("option", "icons", false);
+        }, function() {
+            $("#accordion").accordion("option", "icons", icons);
+        });
+    });
+</script>

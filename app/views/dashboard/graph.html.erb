@@ -1,0 +1,39 @@
+<section class="dashboard">
+  <aside class="side-bar">
+    <div>
+      <h3>Campaigns</h3>
+
+      <div>
+        <ul>
+          <li>Coming Soon</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3>Summary</h3>
+
+      <div>
+        <ul>
+          <li>Coming Soon</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <section class="graph-content">
+    <div class="chart">
+      <div class="chart-header ui-widget-header">
+        <div class="ui-widget-float-right">
+          <input id="graph_date_selector" type="text"/>
+        </div>
+      </div>
+      <div class="chart-body">
+        <%= high_chart("chart", @graph) %>
+      </div>
+      <div class="chart-footer">
+        <%= link_to "Report", "#" %>
+      </div>
+    </div>
+    <%= link_to_function "Back", "history.back()" %>
+  </section>
+</section>

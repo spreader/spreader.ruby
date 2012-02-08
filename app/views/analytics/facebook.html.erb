@@ -1,0 +1,51 @@
+<div id="controls" class="row">
+   <div>
+      <ul class="export">
+         <li><a href="#" class="btn small">Export ▼</a>
+            <ul>
+               <li><a href="#">PDF</a></li>
+               <li><a href="#">CSV</a></li>
+               <li><a href="#">Image</a></li>
+            </ul>
+         </li>
+      </ul>
+   </div>
+   <div>
+      <div class="date-range" class="lfloat">
+         <a href="#" class="btn small">Week</a>
+         <a href="#" class="btn small">Month</a>
+         <input class="small" type="date" />
+         <input class="small" type="date" />
+      </div>
+   </div>
+</div>
+
+<div id="graph" class="row">
+   <%= @results.inspect %>
+</div>
+
+<div id="activity" class="row">
+   <table class="zebra-striped">
+      <thead>
+         <tr>
+            <th>Date</th>
+            <th>Post</th>
+            <th>Reach</th>
+            <th>Engaged Users</th>
+            <th>Talking About This</th>
+            <th>Virality</th>
+         </tr>
+
+      </thead>
+      <tbody>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+      </tbody>
+   </table>
+</div>

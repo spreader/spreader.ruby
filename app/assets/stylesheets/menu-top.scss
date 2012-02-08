@@ -1,0 +1,69 @@
+nav.menu-top
+{
+   margin-right: 25px;
+   display: block;
+   text-align: right;
+   font-size: 1.1em;
+   padding:  0;
+   float: right;
+}
+nav.menu-top ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+nav.menu-top ul li a
+{
+   color: #999;
+   text-decoration: none;
+}
+nav.menu-top ul li a:hover
+{
+   color: #fff;
+}
+nav.menu-top ul li:hover > ul
+{
+    display: block;
+}
+nav.menu-top ul ul
+{
+    display: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #fff; /*#262b31;*/
+    margin-top: 8px;
+    padding: 10px 0 0 0;
+    height: 50px;
+}
+nav.menu-top ul ul li
+{
+    clear: both;
+    margin-right: 10px;
+    text-align: center;
+}
+nav.menu-top ul ul li:hover > a
+{
+   color: #000;
+}
+
+.settings-gear
+{
+    width: 18px;
+    height: 18px;
+    vertical-align: bottom;
+    opacity: 0.5;
+}
+.settings-user:hover > .settings-gear
+{
+    opacity: 1.0;
+}
+.settings-user
+{
+    padding: 10px;
+    vertical-align: top;
+}
+.settings-user:hover > ul
+{
+    display: block;
+}
